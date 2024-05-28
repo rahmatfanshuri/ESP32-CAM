@@ -32,13 +32,13 @@ uint8_t cardType = SD_MMC.cardType();
 /* ---------- PARAMETER WiFi ---------------------------------------------------------*/
 WiFiClient Client;
 WiFiClientSecure clientTCP;
-const char* ssid = "Erbot";
-const char* password = "yahoo123";
+const char* ssid = "";
+const char* password = "";
 const uint16_t port = 443;
 const char* host = "8.8.4.4";  // ip or dns
 /* ---------- PARAMETER TELEGRAM -----------------------------------------------------*/
-String BOTtoken = "5189928151:AAF2EuKhXfwsQpwgWeY5yjrri5-xNhsVw3U";
-String CHAT_ID = "760425294";
+String BOTtoken = "";
+String CHAT_ID = "";
 UniversalTelegramBot bot(BOTtoken, clientTCP);
 /* ---------- PARAMETER GLOBAL -------------------------------------------------------*/
 bool takeStatus, takeInfo, takeImage, takeFlash, takeMsg, statusFlash;
